@@ -23,6 +23,11 @@ app.get("/", async (req, res) => {
 	res.send("Hello World!");
 });
 
+// TODO: create an endpoint that fetches all students from Firebase
+app.get("/students", async (req, res) => {
+	res.send("TODO: Fetch all students")
+})
+
 function start() {
 	app.listen(port, () => {
 		console.log(`Started listening on http://localhost:${port}`)
